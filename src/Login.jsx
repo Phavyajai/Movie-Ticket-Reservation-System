@@ -21,7 +21,7 @@ function Login(props) {
 
   const handlePostRequest_login = () => {
     axios
-      .post('http://127.0.0.1:5000/api/login', {
+      .post('https://flask-server-psi.vercel.app/api/login', {
         email: formData.email,
         password: formData.password
       })
