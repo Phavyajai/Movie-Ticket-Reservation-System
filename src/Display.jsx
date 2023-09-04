@@ -17,7 +17,7 @@ function Display({ onSearch }, props) {
     };
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:5000/api/movies')
+        axios.get('https://flask-server-psi.vercel.app/api/movies')
           .then(response => {
             setMovies(response.data);
           })
