@@ -103,9 +103,9 @@ def login():
     return jsonify({"message": "Login successful"}), 200
 
 if __name__ == '__main__':
-    mongo_uri = "mongodb://localhost:27017/Moviedb"
+    mongo_uri = "mongodb+srv://phavyajai:o3bgbFM31JFsiw7z@cluster0.xyghoel.mongodb.net/"
     client = MongoClient(mongo_uri)
-    db = client.get_database()
+    db = client["Moviedb"]
     receiver_email  = 'ajudevus@gmail.com' 
     sender_email= 'phavyajai@gmail.com'
     password=''
